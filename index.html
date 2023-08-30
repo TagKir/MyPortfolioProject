@@ -10,6 +10,12 @@
       src="https://kit.fontawesome.com/cc1a468549.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -26,20 +32,22 @@
 
     <main>
       <section id="aboutme">
-        <h2>About me</h2>
-        <p>
-          HI! I'm Tagir, Russian pupil and code writer, first in the creating
-          new code problems and bugs.
-        </p>
-        <p>
-          I am one of the first to recognize that vs code have aplications
-          beyound pure calculations, and to have published the first algorithm
-          intended to be carried out by such a machine.
-        </p>
-        <p>
-          In my free time I like to sleep and eat. I also like to take my
-          chances of winning big.
-        </p>
+        <div id="text">
+          <h2>About me</h2>
+          <p>
+            HI! I'm Tagir, Russian pupil and code writer, first in the creating
+            new code problems and bugs.
+          </p>
+          <p>
+            I am one of the first to recognize that vs code have aplications
+            beyound pure calculations, and to have published the first algorithm
+            intended to be carried out by such a machine.
+          </p>
+          <p>
+            In my free time I like to sleep and eat. I also like to take my
+            chances of winning big.
+          </p>
+        </div>
 
         <img src="images/IMG_0647.JPG" alt="My Passport photo" />
       </section>
@@ -47,35 +55,31 @@
       <section id="projects">
         <h2>Projects</h2>
 
-        <ul>
-          <li id="fotomatic">
-            <h3>Fotomatic</h3>
-            <img src="images/fotomatic.png" alt="Fotomatic site picture" />
-            <p>
-              My first (dont test)project and my first flexbox using experience
-            </p>
-          </li>
+        <details>
+          <summary>Fotomatic</summary>
+          <img src="images/fotomatic.png" alt="Fotomatic site picture" />
+          <p>
+            My first (dont test)project and my first flexbox using experience
+          </p>
+        </details>
 
-          <li id="teacozy">
-            <h3>Tea Cozy</h3>
-            <img src="images/teacozy.png" alt="Tea Cozy site picture" />
-            <p>
-              My second project. This was awfull, becouse i sit on my chair 8
-              hours and finally made this project with blood in my eyes
-            </p>
-          </li>
+        <details>
+          <summary>Tea Cozy</summary>
+          <img src="images/teacozy.png" alt="Tea Cozy site picture" />
+          <p>
+            My second project. This was awfull, becouse i sit on my chair 8
+            hours and finally made this project with blood in my eyes
+          </p>
+        </details>
 
-          <li id="mixesmessages">
-            <h3>Mixes Messages</h3>
-            <article id="hidden">
-              <!-- Тут должен быть js код mixed messages-->
-              <p>
-                My third project and first Javascript project. This was easy and
-                interesting. That's all.
-              </p>
-            </article>
-          </li>
-        </ul>
+        <details>
+          <summary>Mixes Messages</summary>
+          <!-- Тут должен быть js код mixed messages-->
+          <p>
+            My third project and first Javascript project. This was easy and
+            interesting. That's all.
+          </p>
+        </details>
       </section>
 
       <section id="skills">

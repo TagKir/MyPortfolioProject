@@ -1,1 +1,91 @@
 /* сделал весь html, дальше css дальше js*/
+html {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+p {
+  font-weight: 300;
+}
+h1 {
+  font-weight: 800;
+}
+h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+h4 {
+  font-weight: 500;
+}
+p {
+  font-size: 1.3rem;
+}
+
+header {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  background: #d8d8d8;
+  border: 1px solid #979797;
+  border-radius: 0 0 38px 38px;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li::after {
+  content: "";
+  margin-left: 10px;
+}
+
+#aboutme {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+}
+
+#aboutme img {
+  width: 40%;
+  height: 100%;
+  max-height: 20rem;
+  margin: 10px 10px 0 50px;
+}
+
+#projects summary {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+#projects img {
+  width: 80%;
+}
+#projects p {
+  font-size: 1.4rem;
+}
+
+#skills i {
+  opacity: 0.75;
+  font-size: 2.875rem;
+  margin: 0 5px;
+}
+
+footer {
+  font-size: 1.125rem;
+}
+footer i {
+  color: red;
+}
