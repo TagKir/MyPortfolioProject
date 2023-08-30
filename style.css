@@ -69,6 +69,33 @@ nav ul li::after {
   font-size: 1.6rem;
   font-weight: 300;
 }
+#projects button {
+  width: 10rem;
+  height: 5rem;
+  margin: 20px 0;
+  background-color: lightgreen;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 0px green;
+  border-bottom: 5px solid green;
+}
+#projects button:hover {
+  background: darken;
+  box-shadow: 0 4px 1px darken;
+  border-bottom: 4px solid darken;
+  transition: all 0.05s ease-in;
+}
+
+#projects button:active {
+  transform: translateY(4px);
+  border-bottom-width: 2px;
+  box-shadow: none;
+}
 
 #projects img {
   width: 80%;
