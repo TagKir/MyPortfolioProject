@@ -34,6 +34,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 nav ul {
@@ -59,8 +60,7 @@ nav ul li::after {
 }
 
 #aboutme img {
-  width: 40%;
-  height: 100%;
+  max-width: 15rem;
   max-height: 20rem;
   margin: 10px 10px 0 50px;
 }
@@ -69,7 +69,7 @@ nav ul li::after {
   font-size: 1.6rem;
   font-weight: 300;
 }
-#projects button {
+button {
   width: 10rem;
   height: 5rem;
   margin: 20px 0;
@@ -82,19 +82,23 @@ nav ul li::after {
   font-size: 20px;
   border-radius: 5px;
   box-shadow: 0 5px 0px green;
-  border-bottom: 5px solid green;
+  border-bottom: 7px solid green;
 }
-#projects button:hover {
-  background: darken;
-  box-shadow: 0 4px 1px darken;
-  border-bottom: 4px solid darken;
-  transition: all 0.05s ease-in;
+button:hover {
+  background-color: rgb(103, 215, 43);
+  border-bottom: 3px solid green;
+  transition: all 0.05s;
 }
 
-#projects button:active {
-  transform: translateY(4px);
+button:active {
+  background-color: rgb(67, 178, 65);
+  transition: all 0.03s ease-in;
+  transform: translateY(5px);
   border-bottom-width: 2px;
   box-shadow: none;
+}
+#pushme {
+  font-size: 50px;
 }
 
 #projects img {
@@ -109,10 +113,33 @@ nav ul li::after {
   font-size: 2.875rem;
   margin: 0 5px;
 }
+#tagir {
+  width: 8rem;
+  height: 4rem;
+  font-size: 0.25rem;
+}
 
 footer {
   font-size: 1.125rem;
 }
 footer i {
   color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  #aboutme {
+    display: block;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  #me {
+    display: none;
+  }
 }
