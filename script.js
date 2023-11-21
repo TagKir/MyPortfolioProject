@@ -3,9 +3,9 @@ function randomNumber(item) {
 }
 
 const mlbbRound = {
-  person: ["Pharsa", "Valir", "Lunoks", "Natasha", "Dshonson"],
-  line: ["Gold", "Mid", "Exp", "Roum", "Jungle"],
-  end: ["Winner", "Loser"],
+  person: ["Algebra", "Biology", "Chemistry", "Geography", "Literature"],
+  line: ["sExam", "Creative", "Formative"],
+  end: [2, 3, 3, 4, 4, 4, 5, 5, 5, 5],
 };
 
 let answer;
@@ -16,8 +16,8 @@ function answerPrint() {
   answer = [];
   result = [];
 
-  for (item in mlbbRound) {
-    randRes = randomNumber(item.length - 1);
+  for (let item in mlbbRound) {
+    randRes = randomNumber(mlbbRound[item].length);
     switch (item) {
       case "person":
         answer.push(mlbbRound.person[randRes]);
@@ -31,9 +31,9 @@ function answerPrint() {
     }
   }
   result.push(
-    `Your person: ${answer[0]} <br />
-  Your line: ${answer[1]} <br />
-  You are: ${answer[2]}`
+    `Subject: ${answer[0]} <br />
+    Kind of work: ${answer[1]} <br />
+  Mark: ${answer[2]}`
   );
 }
 
