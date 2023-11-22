@@ -4,7 +4,7 @@ function randomNumber(item) {
 
 const mlbbRound = {
   person: ["Algebra", "Biology", "Chemistry", "Geography", "Literature"],
-  line: ["sExam", "Creative", "Formative"],
+  line: ["Exam", "Creative", "Formative"],
   end: [2, 3, 3, 4, 4, 4, 5, 5, 5, 5],
 };
 
